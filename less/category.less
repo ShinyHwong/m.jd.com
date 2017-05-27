@@ -1,0 +1,78 @@
+.category-mainbody{
+  width: 100%;
+  height: auto; /*JS动态设置*/
+  overflow: hidden;
+  .nav-left{
+    width: 75px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    ul{
+      background-color: #fff;
+      li{
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+
+        border-right: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        a{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+
+        &.current{
+          a{
+            color: #f23030;
+          }
+        }
+      }
+    }
+  }
+
+  .content-right{
+    margin-left: 75px;
+    padding: 7px;
+    overflow: hidden;
+    .content-banner{
+      width: 100%;
+      a{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .section{
+      margin: 10px 0;
+      width: 100%;
+      h4{
+        font-weight: normal;
+      }
+      ul{
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 5px 10px;
+        li{
+          width: 33.3%;
+          float: left;
+          text-align: center;
+          a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 5px;
+            img{
+              width: 100%;
+            }
+            span{
+              display: block;
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.category-mainbody {
+  width: 100%;
+  height: auto;
+  /*JS动态设置*/
+  overflow: hidden;
+}
+.category-mainbody .nav-left {
+  width: 75px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.category-mainbody .nav-left ul {
+  background-color: #fff;
+}
+.category-mainbody .nav-left ul li {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.category-mainbody .nav-left ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.category-mainbody .nav-left ul li.current a {
+  color: #f23030;
+}
+.category-mainbody .content-right {
+  margin-left: 75px;
+  padding: 7px;
+  overflow: hidden;
+}
+.category-mainbody .content-right .content-banner {
+  width: 100%;
+}
+.category-mainbody .content-right .content-banner a img {
+  width: 100%;
+}
+.category-mainbody .content-right .section {
+  margin: 10px 0;
+  width: 100%;
+}
+.category-mainbody .content-right .section h4 {
+  font-weight: normal;
+}
+.category-mainbody .content-right .section ul {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.category-mainbody .content-right .section ul li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+.category-mainbody .content-right .section ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 5px;
+}
+.category-mainbody .content-right .section ul li a img {
+  width: 100%;
+}
+.category-mainbody .content-right .section ul li a span {
+  display: block;
+  margin: 5px 0;
+}

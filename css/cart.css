@@ -1,0 +1,182 @@
+/*设置选择样式*/
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background: url("../images/sprites.png") -180px -89px;
+  background-size: 200px 200px;
+}
+input[type="checkbox"][checked] {
+  background-position: -180px -69px;
+}
+/*安全提示*/
+.safe-tips {
+  overflow: hidden;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  background-color: #fff;
+}
+.safe-tips span {
+  height: 100%;
+  font-size: 14px;
+  line-height: 36px;
+}
+.safe-tips span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url("../images/safe_icon.png") no-repeat;
+  -webkit-background-size: 18px 18px;
+  background-size: 18px 18px;
+}
+/*商家物品详情*/
+.shop {
+  margin: 7px;
+  background-color: #fff;
+}
+.shop .shop-header {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.shop .shop-header .all-select {
+  margin-top: 8px;
+  margin-left: 10px;
+  float: left;
+}
+.shop .shop-header .shop-name {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+.shop .shop-header .shop-name h4 {
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+}
+.shop .shop-header .shop-name h4::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url("../images/buy-logo.png") no-repeat;
+  background-size: 14px 14px;
+  display: inline-block;
+}
+.shop .shop-header .shop-name span {
+  float: right;
+  color: #f23030;
+}
+.shop .item-list {
+  width: 100%;
+}
+.shop .item-list li {
+  border-bottom: 2px solid #e3e5e9;
+}
+.shop .item-list li .item-select {
+  width: 40px;
+  float: left;
+}
+.shop .item-list li .item-select input {
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.shop .item-list li .item-info {
+  padding: 10px 0 10px 40px;
+  position: relative;
+}
+.shop .item-list li .item-info .item-img {
+  width: 88px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.shop .item-list li .item-info .item-img img {
+  width: 88px;
+  height: 88px;
+}
+.shop .item-list li .item-info .item-des {
+  padding-left: 96px;
+  padding-right: 10px;
+}
+.shop .item-list li .item-info .item-des p {
+  padding-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*超出两行文字显示省略号*/
+  -webkit-box-orient: vertical;
+}
+.shop .item-list li .item-info .item-des .item-price {
+  display: block;
+  margin: 10px 0;
+  color: #f23030;
+}
+.shop .item-list li .item-info .item-des .item-count {
+  width: 82px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #cbcbcb;
+  position: relative;
+}
+.shop .item-list li .item-info .item-des .item-count .sub,
+.shop .item-list li .item-info .item-des .item-count .plus {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: -1px;
+  font-size: 22px;
+}
+.shop .item-list li .item-info .item-des .item-count .sub.disabled,
+.shop .item-list li .item-info .item-des .item-count .plus.disabled {
+  color: #ccc;
+}
+.shop .item-list li .item-info .item-des .item-count .plus {
+  right: 0;
+}
+.shop .item-list li .item-info .item-des .item-count input[type="tel"] {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  text-align: center;
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+.shop .item-list li .item-info .item-des .item-del {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+}
+.shop .item-list li .item-info .item-des .item-del .bin-top {
+  width: 18px;
+  height: 4px;
+  display: inline-block;
+  background: url("../images/delete_up.png");
+  background-size: 18px 4px;
+}
+.shop .item-list li .item-info .item-des .item-del .bin-body {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: -6px;
+  display: inline-block;
+  background: url("../images/delete_down.png");
+  background-size: 17px 17px;
+}

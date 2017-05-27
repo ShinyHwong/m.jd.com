@@ -1,0 +1,170 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #f3f3f3;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    /*移除iOS默认的点击链接后的高光效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+ul,ol{
+    list-style: none;
+}
+input,textarea{
+    outline: none;
+    border: none;
+    /*移除iOS默认的外观样式*/
+    -webkit-appearance: none;
+}
+
+/*清除浮动*/
+.clearfloat::before,
+.clearfloat::after{
+    content:'';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+[class^="icon-"]{
+    background: url("../images/sprites.png") no-repeat;
+    position: absolute;
+    /*图片实际尺寸为400*400，但是在iPhone上遵循@2，一个像素等于2px*/
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+}
+
+/*子界面通用顶部*/
+.base-header {
+    width: 100%;
+    height: 44px;
+    position: relative;
+    background: url("../images/header-bg.png") repeat-x;
+    -webkit-background-size: 1px 44px;
+    background-size: 1px 44px;
+}
+.base-header .back-btn {
+    width: 40px;
+    height: 100%;
+    float: left;
+}
+.base-header .back-btn a {
+    width: 100%;
+    height: 100%;
+}
+.base-header .back-btn a .icon-back {
+    width: 40px;
+    height: 100%;
+    padding: 12px 13px;
+    background-position: -23px 0;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+.base-header .search {
+    width: 100%;
+    height: 100%;
+    padding: 5px 55px 5px 40px;
+    border-bottom: 1px solid #ccc;
+}
+.base-header .search form {
+    width: 100%;
+    height: 44px;
+    position: relative;
+}
+.base-header .search form span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    top: 14px;
+}
+.base-header .search form span.icon-search {
+    background-position: -83px 0;
+    top: 10px;
+    left: 12px;
+}
+.base-header .search form input {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 30px;
+    border-radius: 17px;
+    border: 1px solid #ccc;
+}
+.base-header .header-title {
+    width: 100%;
+    height: 100%;
+    margin-left: -40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+    color: #333;
+}
+.base-header .icon-shortcut {
+    width: 40px;
+    height: 44px;
+    padding: 13px 11px;
+    background-position: -60px 0;
+    background-clip: content-box;
+    background-origin: content-box;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.base-header .header-shortcut {
+    width: 100%;
+    background-color: #404042;
+
+    display: none; /*默认隐藏*/
+}
+.base-header .header-shortcut ul {
+    width: 100%;
+    height: 57px;
+}
+.base-header .header-shortcut ul li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.base-header .header-shortcut ul li.current {
+    background-color: #2d2d2d;
+}
+.base-header .header-shortcut ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+}
+.base-header .header-shortcut ul li a span {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: -15px;
+}
+.base-header .header-shortcut ul li a span.icon-home {
+    background-position: -30px -27px;
+}
+.base-header .header-shortcut ul li a span.icon-category {
+    background-position: -60px -27px;
+}
+.base-header .header-shortcut ul li a span.icon-cart {
+    background-position: -90px -27px;
+}
+.base-header .header-shortcut ul li a span.icon-me {
+    background-position: -120px -27px;
+}
+.base-header .header-shortcut ul li a p {
+    padding-top: 35px;
+}
