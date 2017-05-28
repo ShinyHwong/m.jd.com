@@ -87,7 +87,8 @@ input[type="checkbox"][checked] {
   margin-top: 40px;
 }
 .shop .item-list li .item-info {
-  padding: 10px 0 10px 40px;
+  padding: 10px 0;
+  margin-left: 40px;
   position: relative;
 }
 .shop .item-list li .item-info .item-img {
@@ -96,7 +97,7 @@ input[type="checkbox"][checked] {
   display: block;
   position: absolute;
   top: 10px;
-  left: 40px;
+  left: 0;
 }
 .shop .item-list li .item-info .item-img img {
   width: 88px;
@@ -170,6 +171,8 @@ input[type="checkbox"][checked] {
   display: inline-block;
   background: url("../images/delete_up.png");
   background-size: 18px 4px;
+  transform-origin: left 3px;
+  transition: all 0.5s ease-in-out;
 }
 .shop .item-list li .item-info .item-des .item-del .bin-body {
   width: 17px;
@@ -179,4 +182,118 @@ input[type="checkbox"][checked] {
   display: inline-block;
   background: url("../images/delete_down.png");
   background-size: 17px 17px;
+}
+/*结算界面*/
+.checkout {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+.checkout .check-select {
+  width: 75px;
+  height: 100%;
+  padding-left: 17px;
+  padding-top: 15px;
+  float: left;
+  position: relative;
+}
+.checkout .check-select label {
+  font-weight: bold;
+  position: absolute;
+  top: 16px;
+  left: 40px;
+}
+.checkout .check-price {
+  float: left;
+  height: 100%;
+}
+.checkout .check-price h4 {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.checkout .check-price p {
+  font-size: 10px;
+  opacity: .8;
+}
+.checkout .check-btn {
+  width: 100px;
+  height: 100%;
+  float: right;
+  background-color: #f23030;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+.checkout .check-btn span {
+  font-size: 12px;
+}
+/*删除提示*/
+.alert-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.alert-cover .alert {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+.alert-cover .alert p {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: #333;
+  font-size: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.alert-cover .alert button {
+  width: 40%;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px 5%;
+  font-size: 12px;
+}
+.alert-cover .alert button.cancel {
+  background-color: #f23030;
+  color: #fff;
+}
+/*回弹动画*/
+.spring-anima {
+  animation: spring 1s ease-in-out;
+}
+@keyframes spring {
+  0% {
+    transform: translateY(-3000px);
+  }
+  65% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  85% {
+    transform: translateY(20px);
+  }
+  95% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
