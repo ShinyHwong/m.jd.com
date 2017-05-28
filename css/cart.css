@@ -8,6 +8,9 @@ input[type="checkbox"] {
 input[type="checkbox"][checked] {
   background-position: -180px -69px;
 }
+body {
+  padding-bottom: 50px;
+}
 /*安全提示*/
 .safe-tips {
   overflow: hidden;
