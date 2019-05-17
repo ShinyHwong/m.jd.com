@@ -1,8 +1,8 @@
 # 京东移动站
-体验地址：[Demo](http://hwong.cn/m.jd.com/index.html "京东移动站")
+体验地址：[Demo](https://shinyhwong.github.io/m.jd.com/index.html "京东移动站")
 
 ## 项目介绍
-本项目未使用任何第三方类库，全部采用原生JS制作。共制作[首页](http://hwong.cn/m.jd.com/index.html)、[分类](http://hwong.cn/m.jd.com/category.html)、[购物车](http://hwong.cn/m.jd.com/cart.html)三大界面，页面内可互相跳转。
+本项目未使用任何第三方类库，全部采用原生JS制作。共制作[首页](https://shinyhwong.github.io/m.jd.com/index.html)、[分类](https://shinyhwong.github.io/m.jd.com/category.html)、[购物车](https://shinyhwong.github.io/m.jd.com/cart.html)三大界面，页面内可互相跳转。
 
 ## 项目特点
 - 在 base 文件内封装项目内需要复用的样式及功能
